@@ -1,0 +1,105 @@
+body {
+  overflow-x: hidden;
+  background: #F3F2F8;
+}
+
+.bg-gray {
+  display: none;
+}
+
+.wrapper {
+  font-family: $ff-1;
+  color: $neutral-100;
+  font-size: 14px;
+  line-height: 20px;
+  background: #F3F2F8;
+
+  @media (min-width: $m1024) {
+    @include body-L-17;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+.envelope {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: $m768) {
+    max-width: 768px;
+  }
+
+  @media (min-width: $m1024) {
+    max-width: 1024px;
+  }
+
+  @media (min-width: $m1280) {
+    max-width: 1140px;
+  }
+
+  @media (min-width: $m1440) {
+    max-width: 1216px;
+  }
+}
+
+.hasPadding {
+  padding: 0 16px;
+
+  @media (min-width: $m1024) {
+    padding: 0 24px;
+  }
+
+  @media (min-width: $m1280) {
+    padding: 0 32px;
+  }
+}
+
+h3.section-title {
+  @include h3;
+}
+
+h4.section-title {
+  @include h4;
+}
+
+.section-title {
+  margin-bottom: 24px;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 32px;
+  }
+
+}
+
+.envelope a {
+  color: #007CFF;
+
+  &:hover {
+    color: #007CFF;
+    text-decoration: underline!important;
+  }
+
+  &:active {
+    color: #000;
+    text-decoration: underline!important;
+  }
+}
+
+/* Не переносить - START */
+
+.footer {
+  background-color: $color-pink-100;
+  height: 60px;
+  border: 2px dotted;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 96px;
+}
+
+
+/* Не переносить - END */

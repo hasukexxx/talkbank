@@ -1,0 +1,185 @@
+// == COLUMN ITEMS == //
+@mixin column-item {
+  width: 100%;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  @media (min-width: $m1024) {
+    margin-left: 32px;
+    // margin-bottom: 36px;
+  }
+
+  @media (min-width: $m1360) {
+    margin-left: 48px;
+    // margin-bottom: 48px;
+  }
+
+  @media (min-width: $m1600) {
+    margin-left: 52px;
+    // margin-bottom: 52px;
+  }
+}
+
+// == GRID GAP == //
+@mixin grid-column-gap {
+  grid-column-gap: 8px;
+
+  @media (min-width: $m1024) {
+    grid-column-gap: 32px;
+  }
+
+  @media (min-width: $m1280) {
+    grid-column-gap: 48px;
+  }
+
+  @media (min-width: $m1440) {
+    grid-column-gap: 52px;
+  }
+}
+
+@mixin grid-row-gap {
+  grid-row-gap: 8px;
+
+  @media (min-width: $m1024) {
+    grid-row-gap: 24px;
+  }
+
+  @media (min-width: $m1280) {
+    grid-row-gap: 32px;
+  }
+}
+
+// == SPACING == //
+@mixin padding-LR {
+  padding: 0 16px;
+
+  @media (min-width: $m1024) {
+    padding: 0 32px;
+  }
+}
+
+// == ELEMENTS == //
+@mixin li {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: $neutral-500;
+    position: absolute;
+    top: 9px;
+    left: 0;
+  }
+}
+
+// == FONTS == //
+// == FONTS == //
+@mixin h1 {
+  font-family: $ff-1;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+
+  @media screen and (min-width: $m1024) {
+    font-size: 64px;
+    line-height: 76px;
+    letter-spacing: -1px;
+  }
+}
+
+@mixin h2 {
+  font-family: $ff-1;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+
+  @media screen and (min-width: $m1024) {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1px;
+  }
+}
+
+@mixin h3 {
+  font-family: $ff-1;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+
+  @media screen and (min-width: $m1024) {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+@mixin h4 {
+  font-family: $ff-1;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0px;
+
+  @media screen and (min-width: $m1024) {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+  }
+}
+
+@mixin h5 {
+  font-family: $ff-1;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+
+@mixin body-S-12 {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+}
+
+@mixin body-M-14 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+}
+
+@mixin body-M-14-medium {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+@mixin body-L-17 {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+@mixin body-L-17-medium {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+@mixin body-XL-20 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: normal;
+}
+
+@mixin body-XL-20-medium {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+}

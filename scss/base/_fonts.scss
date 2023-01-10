@@ -1,0 +1,49 @@
+/* Не переносить - START */
+$font: "MTS Sans", Arial,
+Helvetica,
+sans-serif;
+@font-face {
+    font-family: "MTS Sans";
+    src:
+	     url('../fonts/MTSSans-Regular__W.woff2') format('woff2'),
+	     url('../fonts/MTSSans-Regular__W.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MTS Sans";
+    src:
+	     url('../fonts/MTSSans-Medium__W.woff2') format('woff2'),
+	     url('../fonts/MTSSans-Medium__W.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MTS Sans";
+    src:
+	     url('../fonts/MTSSans-Bold__W.woff2') format('woff2'),
+	     url('../fonts/MTSSans-Bold__W.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'MTS Sans';
+	src:
+	     url('../fonts/MTSSans-Black__W.woff2') format('woff2'),
+	     url('../fonts/MTSSans-Black__W.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MTS Sans';
+	src:
+	     url('../fonts/MTSSans-UltraWide__W.woff2') format('woff2'),
+	     url('../fonts/MTSSans-UltraWide__W.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+/* Не переносить - END */

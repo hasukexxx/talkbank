@@ -1,0 +1,67 @@
+.subscribe {
+  margin-top: 52px;
+  opacity: 0;
+
+  &.show {
+    animation: show .3s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  @media (min-width: $m1024) {
+    margin-top: 64px;
+  }
+
+  &__inner {
+    background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='100%25' height='100%25' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' rx='12' ry='12' fill='%23fff' stroke='%23000' stroke-width='2' stroke-dasharray='5 10' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+    padding: 32px;
+    border-radius: 12px;
+
+    @media (min-width: $m1024) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 64px 76px;
+    }
+
+    @media (min-width: $m1280) {
+      padding: 64px 100px;
+    }
+
+    @media (min-width: $m1440) {
+      padding: 64px 112px;
+    }
+  }
+
+  &__label {
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background: $red-100;
+    margin-bottom: 16px;
+    width: 170px;
+    padding: 4px 12px 5px 12px;
+    border-radius: 100px;
+
+    @media (min-width: $m1024) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 12px;
+
+    @media (min-width: $m1024) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &-p {
+    margin-bottom: 24px;
+
+    &_bold {
+      font-weight: 500;
+    }
+  }
+}
